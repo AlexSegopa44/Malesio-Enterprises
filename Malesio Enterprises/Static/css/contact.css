@@ -1,0 +1,310 @@
+/* ═══════════════════════════════════════════════════════════════
+   MALESIO ENTERPRISES — contact.css
+   Contact page: dark hero + info cards + glass CTA card
+═══════════════════════════════════════════════════════════════ */
+
+/* ══════════════════════════════════════════════════════════════
+   CONTACT HERO
+══════════════════════════════════════════════════════════════ */
+.contact-hero {
+  position: relative;
+  min-height: 72vh;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  background: var(--black);
+}
+
+.contact-hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.contact-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 60%;
+}
+
+.contact-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(13,13,13,0.92) 0%,
+    rgba(13,13,13,0.65) 60%,
+    rgba(13,13,13,0.50) 100%
+  );
+}
+
+.contact-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: var(--max-w);
+  width: 100%;
+  margin-inline: auto;
+  padding: 160px 20px 80px;
+}
+
+.contact-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(4rem, 12vw, 8rem);
+  line-height: 0.9;
+  color: var(--white);
+  margin: 12px 0 20px;
+  letter-spacing: 0.01em;
+}
+
+.contact-hero-sub {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.75;
+  max-width: 400px;
+}
+
+.contact-hero-tear {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  line-height: 0;
+}
+.contact-hero-tear svg {
+  width: 100%;
+  height: 60px;
+  display: block;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   CONTACT BODY
+══════════════════════════════════════════════════════════════ */
+.contact-body {
+  background: var(--white);
+  padding: 80px 0 100px;
+}
+
+.contact-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+/* ── Info cards (left col) ─────────────────────────────────── */
+.contact-info { flex: 1; }
+
+.info-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.info-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 20px 22px;
+  background: var(--off-white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+  text-decoration: none;
+  color: inherit;
+}
+
+.info-card:not(.info-card--static):hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+  border-color: var(--red);
+}
+
+/* Primary card — WhatsApp */
+.info-card--primary {
+  background: var(--black);
+  border-color: transparent;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+.info-card--primary:hover {
+  border-color: var(--red) !important;
+  box-shadow: 0 16px 48px rgba(200,0,30,0.22) !important;
+}
+.info-card--primary .info-card-icon {
+  background: var(--red);
+  color: var(--white);
+}
+.info-card--primary .info-card-label {
+  color: rgba(255,255,255,0.45);
+}
+.info-card--primary .info-card-value {
+  color: var(--white);
+}
+.info-card--primary .info-card-hint {
+  color: rgba(255,255,255,0.3);
+}
+
+.info-card-icon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 12px;
+  background: var(--light-grey);
+  color: var(--red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition);
+}
+.info-card-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.info-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.info-card-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.info-card-value {
+  font-size: 0.925rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+.info-card-hint {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.info-card--static { cursor: default; }
+
+/* ── Glass CTA card (right col) ────────────────────────────── */
+.contact-cta-col { flex: 1; }
+
+.contact-cta-card {
+  padding: 40px 36px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle red glow in corner */
+.contact-cta-card::before {
+  content: '';
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 240px;
+  height: 240px;
+  background: radial-gradient(circle, rgba(200,0,30,0.10) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.cta-card-badge {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--red);
+  background: rgba(200,0,30,0.08);
+  border: 1px solid rgba(200,0,30,0.18);
+  border-radius: 50px;
+  padding: 5px 14px;
+  margin-bottom: 20px;
+}
+
+.cta-card-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  line-height: 1;
+  color: var(--text-main);
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+
+.cta-card-sub {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: 28px;
+}
+
+.service-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.s-tag {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  background: var(--light-grey);
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  padding: 5px 14px;
+}
+
+.cta-card-btn {
+  width: 100%;
+  justify-content: center;
+  font-size: 0.95rem;
+  padding: 16px 28px;
+  margin-bottom: 16px;
+}
+
+.cta-card-note {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  justify-content: center;
+}
+.cta-card-note svg {
+  color: var(--red);
+  flex-shrink: 0;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   TABLET — 640px+
+══════════════════════════════════════════════════════════════ */
+@media (min-width: 640px) {
+  .info-cards { gap: 16px; }
+}
+
+/* ══════════════════════════════════════════════════════════════
+   DESKTOP — 900px+
+══════════════════════════════════════════════════════════════ */
+@media (min-width: 900px) {
+  .contact-grid {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 72px;
+  }
+  .contact-info { flex: 1.1; }
+  .contact-cta-col { flex: 1; }
+}
+
+/* ══════════════════════════════════════════════════════════════
+   LARGE DESKTOP — 1200px+
+══════════════════════════════════════════════════════════════ */
+@media (min-width: 1200px) {
+  .contact-hero-content { padding-bottom: 100px; }
+}
+
+/* ══════════════════════════════════════════════════════════════
+   REDUCED MOTION
+══════════════════════════════════════════════════════════════ */
+@media (prefers-reduced-motion: reduce) {
+  .info-card, .contact-cta-card { transition: none !important; }
+}

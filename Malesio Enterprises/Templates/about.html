@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Malesio Enterprises</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../static/css/style.css" />
+  <link rel="stylesheet" href="../static/css/about.css" />
+</head>
+<body>
+
+  <!-- ═══════════════ NAV (shared) ═══════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-m">M</span>
+        <span class="logo-text">ALESIO <span>ENTERPRISES</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Get a Quote</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════ SPLIT HERO ═══════════════ -->
+  <section class="about-hero">
+
+    <!-- Left panel — dark -->
+    <div class="about-hero-left">
+      <div class="about-hero-left-inner">
+        <span class="section-tag" style="color:var(--red)">Our Story</span>
+        <h1 class="about-hero-title">
+          Moving<br />
+          <span class="red">South</span><br />
+          Africa<br />
+          Forward.
+        </h1>
+        <p class="about-hero-sub">
+          Born in Gauteng. Built on reliability. Malesio Enterprises has been connecting businesses and communities through dependable logistics since day one.
+        </p>
+        <a href="#our-story" class="btn btn-primary">Learn More</a>
+      </div>
+    </div>
+
+    <!-- Vertical tear SVG — desktop only, sits between panels -->
+    <div class="vertical-tear" aria-hidden="true">
+      <svg viewBox="0 0 80 900" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M40,0 Q55,45 38,90 Q22,135 45,180 Q62,225 35,270 Q18,315 48,360 Q65,405 32,450 Q15,495 42,540 Q60,585 30,630 Q12,675 44,720 Q62,765 36,810 Q20,855 40,900 L80,900 L80,0 Z" fill="#0D0D0D"/>
+        <path d="M40,0 Q55,45 38,90 Q22,135 45,180 Q62,225 35,270 Q18,315 48,360 Q65,405 32,450 Q15,495 42,540 Q60,585 30,630 Q12,675 44,720 Q62,765 36,810 Q20,855 40,900" fill="none" stroke="#C8001E" stroke-width="2.5" opacity="0.7"/>
+      </svg>
+    </div>
+
+    <!-- Right panel — white with image -->
+    <div class="about-hero-right">
+      <!-- Replace with your image -->
+      <img src="../static/imgs/about-hero.jpg" alt="Malesio Enterprises team" class="about-hero-img" />
+      <div class="about-hero-right-overlay"></div>
+      <!-- Floating glass stat cards -->
+      <div class="stat-card glass-dark" style="bottom: 120px; left: -24px;">
+        <span class="stat-num">100<span class="red">%</span></span>
+        <span class="stat-label">Client Satisfaction</span>
+      </div>
+      <div class="stat-card glass-dark" style="top: 80px; right: -24px;">
+        <span class="stat-num">24<span class="red">/7</span></span>
+        <span class="stat-label">Operations</span>
+      </div>
+    </div>
+
+    <!-- Horizontal tear — mobile only (dark → white) -->
+    <div class="horiz-tear" aria-hidden="true">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,0 L0,30 Q80,60 160,35 Q240,12 320,40 Q400,65 490,30 Q570,0 650,35 Q730,65 820,28 Q900,0 990,35 Q1070,65 1160,30 Q1240,5 1330,38 Q1390,60 1440,32 L1440,0 Z" fill="#ffffff"/>
+      </svg>
+    </div>
+
+  </section>
+
+  <!-- ═══════════════ OUR STORY ═══════════════ -->
+  <section class="our-story" id="our-story">
+    <div class="container">
+      <div class="story-grid reveal">
+        <div class="story-text-col">
+          <span class="section-tag">Who We Are</span>
+          <h2 class="section-title">More Than<br /><span class="red">Logistics</span></h2>
+          <div class="title-bar" style="margin-inline:0; margin-bottom: 24px;"></div>
+          <p>Malesio Enterprises (Pty) Ltd was founded with a clear purpose — to provide businesses and individuals across Gauteng with logistics they can genuinely rely on. We started with a single truck and a commitment to showing up, every time.</p>
+          <p>Today we operate across removals, supply chain management, transportation, freight forwarding, and fuel supply. What hasn't changed is the work ethic behind every delivery and the personal accountability we hold ourselves to.</p>
+          <p>We're not a faceless corporation. We're a Gauteng-based team that answers the phone, meets deadlines, and treats every client's cargo like it's our own.</p>
+        </div>
+        <div class="story-img-col">
+          <!-- Replace with your image -->
+          <div class="story-img-frame">
+            <img src="../static/imgs/about-story.jpg" alt="Malesio team at work" class="story-img" />
+            <div class="story-img-accent"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ VALUES — dark strip ═══════════════ -->
+  <section class="values-section">
+    <!-- White → dark tear -->
+    <div class="values-tear-top" aria-hidden="true">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,60 L0,28 Q80,0 160,25 Q240,48 320,20 Q400,0 490,30 Q570,58 650,25 Q730,0 820,32 Q900,60 990,25 Q1070,0 1160,30 Q1240,55 1330,22 Q1390,0 1440,28 L1440,60 Z" fill="#141414"/>
+      </svg>
+    </div>
+
+    <div class="values-bg"></div>
+    <div class="container values-inner">
+      <div class="section-header">
+        <span class="section-tag">What Drives Us</span>
+        <h2 class="section-title on-dark">Our <span class="red">Values</span></h2>
+        <div class="title-bar"></div>
+      </div>
+
+      <div class="values-grid">
+
+        <div class="value-card reveal">
+          <div class="value-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 11 12 14 22 4"/>
+              <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+            </svg>
+          </div>
+          <h4>Accountability</h4>
+          <p>We own every job from pickup to delivery. No passing the buck — if we said we'd do it, it gets done.</p>
+        </div>
+
+        <div class="value-card reveal">
+          <div class="value-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <h4>Punctuality</h4>
+          <p>Time is money in logistics. We plan our routes, prep our fleet, and show up when we say we will.</p>
+        </div>
+
+        <div class="value-card reveal">
+          <div class="value-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h4>Community</h4>
+          <p>We're proudly Gauteng-grown. We invest in local talent, support local businesses, and give back where we can.</p>
+        </div>
+
+        <div class="value-card reveal">
+          <div class="value-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h4>Integrity</h4>
+          <p>Honest pricing, transparent communication, and no surprises. What you see is what you get with Malesio.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Dark → white tear -->
+    <div class="values-tear-bottom" aria-hidden="true">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,0 L0,32 Q80,60 160,35 Q240,12 320,40 Q400,65 490,30 Q570,0 650,35 Q730,60 820,28 Q900,5 990,35 Q1070,60 1160,30 Q1240,8 1330,38 Q1390,58 1440,32 L1440,0 Z" fill="#ffffff"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ═══════════════ CTA (shared style) ═══════════════ -->
+  <section class="cta-banner reveal">
+    <div class="container cta-inner">
+      <div class="cta-text">
+        <h2>Let's work together.</h2>
+        <p>Tell us what you need and we'll make it happen.</p>
+      </div>
+      <div class="cta-contacts">
+        <a href="tel:0736554354" class="contact-chip">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.4 2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 5.51 5.51l1.06-.97a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16.92z"/>
+          </svg>
+          073 655 4354
+        </a>
+        <a href="mailto:malesioenterprises@gmail.com" class="contact-chip">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+          malesioenterprises@gmail.com
+        </a>
+      </div>
+      <a href="contact.html" class="btn btn-white">Get a Quote</a>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER (shared) ═══════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <span class="logo-m">M</span>
+          <span class="logo-text">ALESIO <span>ENTERPRISES</span></span>
+        </a>
+        <p class="footer-tagline">Logistics that you can rely on</p>
+      </div>
+      <div class="footer-links">
+        <h5>Pages</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h5>Contact</h5>
+        <div class="footer-contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.4 2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 5.51 5.51l1.06-.97a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16.92z"/>
+          </svg>
+          <span>073 655 4354</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+          <span>malesioenterprises@gmail.com</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+          <span>Gauteng, South Africa</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Malesio Enterprises (Pty) Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../static/js/main.js"></script>
+</body>
+</html>
